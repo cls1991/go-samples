@@ -2,14 +2,14 @@ package main
 
 import (
 	"crypto/md5"
-	"io"
+	"encoding/json"
 	"fmt"
+	"io"
+	"io/ioutil"
+	"log"
 	"os"
 	"path/filepath"
-	"encoding/json"
-	"log"
 	"strings"
-	"io/ioutil"
 )
 
 type M map[string]string
@@ -27,7 +27,7 @@ func main() {
 		return nil
 	})
 	if err != nil {
-		log.Panic(err)
+		log.Fatal(err)
 	}
 	dat := make(map[string]M)
 	for _, file := range fileList {
@@ -39,7 +39,7 @@ func main() {
 				prefix += SplitChar
 			}
 			name := strings.TrimPrefix(file, prefix)
-			dat[name] = M {"md5": fmt.Sprintf("%x", r)}
+			dat[name] = M{"md5": fmt.Sprintf("%x", r)}
 		}
 	}
 	if len(dat) > 0 {
@@ -49,7 +49,7 @@ func main() {
 		} else {
 			err := ioutil.WriteFile("file/md5/project.manifest", b, 0644)
 			if err != nil {
-				log.Panic(err)
+				log.Fatal(err)
 			}
 		}
 	}
