@@ -1,0 +1,29 @@
+{
+	"ios/project_dev.manifest": {
+		"md5": "c6f71a7590875fa42dae3a3149b0694f"
+	},
+	"ios/res/.DS_Store": {
+		"md5": "3c07c549fdb48df9f5ae9b231c055a9e"
+	},
+	"ios/res/proto/alltemplate": {
+		"md5": "726e11668a537799fe9b49e6dd1e2de3"
+	},
+	"ios/test/a.tar.gz": {
+		"md5": "2f67ea0f2c4be2c0890a07ec16aa6477"
+	},
+	"ios/test/a/a.txt": {
+		"md5": "eff86b5b21616c7d0da72146196bdfb1"
+	},
+	"ios/test/a/b.txt": {
+		"md5": "0a2915ae655bb31e71b7f56ed552686c"
+	},
+	"ios/test/b/b.txt": {
+		"md5": "0a2915ae655bb31e71b7f56ed552686c"
+	},
+	"ios/testdate.lua": {
+		"md5": "710675715369a481d9830be22da7f065"
+	},
+	"ios/version_dev.manifest": {
+		"md5": "5a1faec7e80ebf5586190395d13c406b"
+	}
+}
