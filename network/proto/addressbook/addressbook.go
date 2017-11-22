@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/cls1991/go-samples/network/proto/generated"
+	"github.com/cls1991/go-samples/network/proto/addressbook/addressbook"
 	"github.com/golang/protobuf/proto"
 	"io"
 	"io/ioutil"
