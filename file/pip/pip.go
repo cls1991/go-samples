@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	command := "/home/taozhengkai/.pyenv/shims/pip"
+	command := "/home/cls1991/.pyenv/shims/pip"
 	out, err := exec.Command(command, "freeze").Output()
 	if err != nil {
 		log.Fatal(err)
